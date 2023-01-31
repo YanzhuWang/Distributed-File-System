@@ -151,24 +151,3 @@ the interface as specified by `mfs.h`, and in particular deal with
 the case where the server does not reply in a timely fashion; the way
 it deals with that is simply by retrying the operation, after a
 timeout of some kind (default: five second timeout).
-
-## Relevant Chapters
-
-Read these:
-- [File System Implementation](https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf)
-- [Distributed Systems](https://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf)
-- [Distributed File System: NFS](https://pages.cs.wisc.edu/~remzi/OSTEP/dist-nfs.pdf)
-
-
-## Some Helper Code
-
-To get you going, we have written some simple UDP code that can send a
-message and then receive a reply from a client to a server. It can be found in
-[here](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/dist-intro).
-
-There is also other code as mentioned above:
-- [mfs.h](https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/filesystems-distributed-ufs/mfs.h)
-- [ufs.h](https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/filesystems-distributed-ufs/ufs.h)
-- [mkfs.c](https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/filesystems-distributed-ufs/mkfs.c)
-
-You'll also have to learn how to make a shared library. Read [here](https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html) for more information. 
